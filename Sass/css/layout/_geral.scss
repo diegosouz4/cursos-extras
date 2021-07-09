@@ -1,0 +1,38 @@
+body {
+  font-family: "Roboto Slab", serif;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  @media #{$mq-mobile}{
+    width: 90%;
+  }
+}
+
+.titulo-secao {
+  text-decoration: underline;
+  font-size: converte(2);
+  text-align: center;
+}
+
+.sobre,
+.planos,
+.blog,
+.contato {
+  padding: converte(3) 0 converte(6) 0;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.menu-principal,
+.menu-principal li,
+.post-destaque,
+.posts-antigos,
+form {
+  @media #{$mq-mobile}{
+    width: auto;
+  }
+}

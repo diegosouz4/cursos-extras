@@ -1,0 +1,17 @@
+// Variáveis usadas no SASS
+$corPadrao: #c24e4b;
+$darkBlue: #1e2c35;
+$corBranca: #fff;
+$corPreta: #000;
+
+$raioGrande: 3.125rem;
+
+$mq-mobile: (max-width: 980px);
+$tamanho-fonte: 16px;
+
+// Funções de cores no sass
+// lighten(cor,valor) - deixa a cor mais clara
+// darken(cor,valor) - deixa a cor mais escura
+// adjust-hue(cor,valor) - Ajusta o hue da cor com base no ângulo passado
+// saturate(cor,valor) - deixa a cor mais saturada
+// complement(cor,valor) - Troca para a cor complementar do ton escolhido

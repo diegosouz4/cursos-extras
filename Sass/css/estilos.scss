@@ -1,0 +1,20 @@
+@import './helpers/_variaveis.scss';
+@import './helpers/_mixins.scss';
+
+@import './base/normalize.scss';
+/** Geral **/
+@import './layout/_geral.scss';
+/** Header **/
+@import './layout/_header.scss';
+/** Destaque **/
+@import './layout/_destaque.scss';
+/** Sobre **/
+@import './layout/_sobre.scss';
+/** Planos **/
+@import './layout/_planos.scss';
+/** Blog **/
+@import './layout/_blog.scss';
+/** Contato **/
+@import './layout/_contato.scss';
+/** Footer **/
+@import './layout/_footer.scss';
