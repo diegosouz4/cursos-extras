@@ -1,0 +1,74 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin flex($propriedade, $justify-content) {
+  display: flex;
+  #{$propriedade}: $justify-content;
+}
+
+@mixin for-phone-only {
+  @media (max-width: 767.98px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-only {
+  @media (min-width: 768px) and (max-width: 1199.98px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-only {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin fontSize($tamanho) {
+  font-size: calculaRem($tamanho);
+}
+
+@mixin theme-collection($half-post: true) {
+  @include for-phone-only {
+    width: $full-width;
+  }
+  @if $half-post {
+    width: $half-width;
+  } @else {
+    width: $full-width;
+  }
+}
+
+@mixin font-colletction($half-title: true) {
+  @include for-phone-only{
+    font-size: 1rem;
+  }
+  @if $half-title{
+    font-size: 1.125rem;
+  }@else{
+    font-size: 1.375rem;
+  }
+  
+}
+
+@function calculaRem($tamanho) {
+  @return $tamanho / 16px * 1rem;
+}
+
+@each $direction in $directions {
+  %no-margin-#{$direction} {
+    margin-#{$direction}: 0;
+  }
+  %default-margin-#{$direction} {
+    margin-#{$direction}: $layout-margin-size;
+  }
+  %double-margin-#{$direction} {
+    margin-#{$direction}: $layout-margin-size * 2;
+  }
+  %half-margin-#{$direction} {
+    margin-#{$direction}: $layout-margin-size / 2;
+  }
+}

@@ -1,0 +1,63 @@
+.about {
+  @include for-phone-only {
+    width: 90%;
+  }
+  width: 80%;
+  margin: 0 auto 2.5rem;
+  &__title {
+    background-color: $gray--100;
+    text-align: center;
+    padding: 1.25rem;
+  }
+  &__h1 {
+    font-size: 1.375rem;
+    color: $gray--300;
+    letter-spacing: 1px;
+    @extend %half-margin-top, %default-margin-bottom, %no-margin-left, %no-margin-right;
+  }
+  // &__content{}
+  &__img {
+    width: 100%;
+    @extend %double-margin-bottom;
+  }
+  &__intro {
+    font-weight: 100;
+    color: $gray--300;
+    width: 70%;
+    margin: 2rem auto;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5;
+    @include for-phone-only {
+      width: 90%;
+    }
+    @include for-tablet-only {
+      width: 80%;
+    }
+  }
+  &__split {
+    @include flex(justify-content, center);
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__img--description {
+    width: $img-width;
+    @include for-phone-only{
+      width: 80%;
+    }
+  }
+  &__txt {
+    width: calc(100% - #{$img-width});
+    @include for-phone-only{
+      width: 90%;
+      text-align: center;
+    }
+  }
+  &__p {
+    text-align: initial;
+    font-size: 0.875rem;
+    padding: 0.675rem 1.25rem;
+    color: $gray--300;
+    line-height: 1.3;
+  }
+}
