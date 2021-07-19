@@ -1,0 +1,113 @@
+html,
+body{
+    height: 100%;
+}
+header{
+    background-image: url('../img/castelo.jpg');
+    background-size: cover;
+    background-position: top center;
+    height: 100%;
+    position: relative;
+}
+
+.header__banner{
+    background-color: rgba(0,0,0,.6);
+    border-radius: .5rem;
+    color: white;
+    padding: 1rem;
+    overflow: hidden;
+    width: 80vw;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: transform .6s ease-in-out;
+}
+
+.menu-open{
+    transform: translate(-50%, 5%);
+}
+
+.navbar{
+    z-index: 2;
+}
+
+.banner__titulo{
+    margin-top:0;
+}
+
+.projetos__item{
+    width: 18rem;
+    margin-left:auto;
+    margin-right:auto;
+    padding: .3rem;
+}
+
+@media (min-width:768px){
+    /* .projetos__lista{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .projetos__item{
+        width: calc(50% - 1rem);
+        padding: .3rem;
+        margin-left:0;
+        margin-right:0;
+    } */
+    .img-fluid{
+        height: 100%;
+    }
+}
+
+@media (min-width: 992px){
+    .banner__container{
+        position: relative;
+        height: 100%;
+    }
+    .header__banner{
+        left: 0;
+        width: 50vw;
+        transform: translate(0, -50%);
+    }
+}
+
+
+.depoimentos__titulo{
+    background-color: #0275d8;
+    color: white;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    margin-bottom: 0;
+}
+
+.contato{
+    margin-bottom: 1rem;
+}
+
+.contato__radio,
+.contato__select{
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.contato__radio .radio:first-child{
+    margin-top: 0;
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    padding:1rem 0;
+}
+
+footer address:last-child{
+    margin-bottom: 0;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
