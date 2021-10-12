@@ -1,0 +1,45 @@
+.cartao-de-video{
+    margin-bottom: 2rem;
+}
+
+.cartao-de-video__video{
+    position: relative;
+
+    width: 100%;
+    height: 17.5rem;
+
+    overflow: hidden;
+
+    margin-bottom: .5rem;
+}
+
+.cartao-de-video__video::before{
+    content: '';
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%,-50%);
+    
+    display: block;
+
+    width: 4.785rem;
+    height: 4.785rem;
+
+    border-radius: 50%;
+
+    background-color: var(--white);
+    background-image: url(../../img/icones/play.svg);
+    background-repeat: no-repeat;
+    background-size: 1.75rem;
+    background-position: center left 55%;
+}
+
+.cartao-de-video__titulo{
+    color: var(--black);
+    font-size: var(--size-title);
+    font-weight: var(--weight-title-destaque);
+
+    margin-bottom: .5rem;
+}

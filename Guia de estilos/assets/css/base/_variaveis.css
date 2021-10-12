@@ -1,0 +1,23 @@
+:root {
+  --yellow: #ffcb47;
+  --yellow-30: #ffcb473d;
+  --white: #fff;
+  --gray: #909090;
+  --black: #202020;
+  --black-30: #0000000f;
+
+  --fonte-destaque: "Elsie Swash Caps", cursive;
+  --fonte-principal: "Montserrat", sans-serif;
+
+  --weight-destaque: 900;
+  --weight-bold: 700;
+  --weight-regular: 400;
+  --weight-title-destaque: 700;
+
+  --size-body: 1rem;
+  --size-title: 1.375rem;
+  --size-title-destaque: 2rem;
+
+  --botao-shadow: 10px 10px 30px var(--yellow-30);
+  --input-shadow: 10px 10px 30px var(--black-30);
+}

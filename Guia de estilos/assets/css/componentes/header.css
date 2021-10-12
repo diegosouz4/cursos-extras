@@ -1,0 +1,19 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-sizing: border-box;
+
+    width: 100%;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+}
+
+.header__logo{
+    width: 11.55rem;
+}
+
+.header__carrinho{
+    width: 1.75rem;
+}
