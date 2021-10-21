@@ -1,0 +1,54 @@
+.palestra {
+  background-color: var(--orange-300);
+  padding-top: var(--pd--32);
+  &__chamada {
+    text-align: center;
+    color: var(--white);
+  }
+  &__titulo {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: var(--pd--16);
+  }
+  &__subtitulo {
+    font-size: 2rem;
+    margin-bottom: var(--pd--16);
+  }
+
+  &__lista {
+    text-align: center;
+  }
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    text-align: center;
+
+    background-color: var(--white);
+    border-radius: 0.4rem;
+    padding: var(--pd--16);
+    margin-left: calc(var(--pd--16) / 2);
+    margin-right: calc(var(--pd--16) / 2);
+    margin-bottom: var(--pd--32);
+  }
+  &__img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: var(--pd--10);
+  }
+  &__nome {
+    font-size: 0.8rem;
+    margin-bottom: var(--pd--10);
+  }
+  &__bio {
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: var(--pd--10);
+  }
+  &__descricao {
+    line-height: 1.4;
+    opacity: 0.8;
+  }
+}

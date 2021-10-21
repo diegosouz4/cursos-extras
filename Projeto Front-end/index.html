@@ -11,15 +11,152 @@
     <header class="header">
       <div class="container">
         <nav class="nav__menu">
-          <button class="menu__btn"><span class="menu__icon"></span></button>
           <ul class="menu__list">
-            <li class="menu__item"><a href="" class="menu__link">Sobre</a></li>
             <li class="menu__item">
-              <a href="" class="menu__link">Palestras</a>
+              <a href="#about" class="menu__link">Sobre</a>
+            </li>
+            <li class="menu__item">
+              <a href="#palestra" class="menu__link">Palestrantes</a>
             </li>
           </ul>
         </nav>
+
+        <section class="chamada">
+          <h1 class="chamada__titulo">AluraConf</h1>
+          <h2 class="chamada__subtitulo">30maio|rio</h2>
+          <a href="#contato" class="chamada__link botao">inscreva-se</a>
+        </section>
       </div>
     </header>
+
+    <main class="main">
+      <section id="about" class="sobre">
+        <div class="container">
+          <h2 class="sobre__titulo">Muito conteúdo: do frontend ao backend</h2>
+          <h3 class="sobre__subtitulo">
+            30 de Maio de 2021 - na Cidade Maravilhosa
+          </h3>
+          <p class="sobre__texto">
+            Com a AluraConf abordaremos o que há de novidade e conhecimento
+            essenciais a um desenvolvedor mobile.
+          </p>
+          <p class="sobre__texto">
+            É uma grande chance de ficar por dentro dos assuntos de Android,
+            iOS, Web mobile, desenvolvimento híbrido, UX, além de parte backend
+            com Rest, Microservices, e BigData. O desenvolvedor atualizado vai
+            estar aqui.
+          </p>
+        </div>
+      </section>
+
+      <section id="palestra" class="palestra">
+        <div class="container">
+          <div class="palestra__chamada">
+            <h2 class="palestra__titulo">Palestrantes</h2>
+            <h3 class="palestra__subtitulo">
+              Aprenda com palestrantes que são referência no mercado
+            </h3>
+          </div>
+          <ul class="palestra__lista">
+            <li class="palestra__item">
+              <figure class="palestra__thumb">
+                <img
+                  class="palestra__img"
+                  src="https://picsum.photos/150/150/"
+                  alt=""
+                />
+                <figcaption class="palestra__nome">Davi Alessandro</figcaption>
+                <p class="palestra__bio">Frontend</p>
+              </figure>
+              <p class="palestra__descricao">Lorem ipsum dolor sit amet.</p>
+            </li>
+            <li class="palestra__item">
+              <figure class="palestra__thumb">
+                <img
+                  class="palestra__img"
+                  src="https://picsum.photos/150/150/"
+                  alt=""
+                />
+                <figcaption class="palestra__nome">Davi Alessandro</figcaption>
+                <p class="palestra__bio">Frontend</p>
+              </figure>
+              <p class="palestra__descricao">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga
+                dolore omnis illum vitae facere velit fugiat temporibus!
+                Tempore, inventore cum!
+              </p>
+            </li>
+            <li class="palestra__item">
+              <figure class="palestra__thumb">
+                <img
+                  class="palestra__img"
+                  src="https://picsum.photos/150/150/"
+                  alt=""
+                />
+                <figcaption class="palestra__nome">Davi Alessandro</figcaption>
+                <p class="palestra__bio">Frontend</p>
+              </figure>
+              <p class="palestra__descricao">Lorem ipsum dolor sit amet.</p>
+            </li>
+            <li class="palestra__item">
+              <figure class="palestra__thumb">
+                <img
+                  class="palestra__img"
+                  src="https://picsum.photos/150/150/"
+                  alt=""
+                />
+                <figcaption class="palestra__nome">Davi Alessandro</figcaption>
+                <p class="palestra__bio">Frontend</p>
+              </figure>
+              <p class="palestra__descricao">Lorem ipsum dolor sit amet.</p>
+            </li>
+            <li class="palestra__item">
+              <figure class="palestra__thumb">
+                <img
+                  class="palestra__img"
+                  src="https://picsum.photos/150/150/"
+                  alt=""
+                />
+                <figcaption class="palestra__nome">Davi Alessandro</figcaption>
+                <p class="palestra__bio">Frontend</p>
+              </figure>
+              <p class="palestra__descricao">Lorem ipsum dolor sit amet.</p>
+            </li>
+            <li class="palestra__item">
+              <figure class="palestra__thumb">
+                <img
+                  class="palestra__img"
+                  src="https://picsum.photos/150/150/"
+                  alt=""
+                />
+                <figcaption class="palestra__nome">Davi Alessandro</figcaption>
+                <p class="palestra__bio">Frontend</p>
+              </figure>
+              <p class="palestra__descricao">Lorem ipsum dolor sit amet.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contato" class="contato">
+        <div class="container">
+          <h2 class="contato__titulo">Seus Dados</h2>
+          <form class="form" method="post">
+            <div class="form__field">
+              <label class="form__label" for="nome">Nome</label>
+              <input class="form__input" id="nome" name="nome" type="text" />
+            </div>
+
+            <div class="form__field">
+              <label class="form__label" for="email">E-mail</label>
+              <input class="form__input" id="email" name="email" type="email" />
+            </div>
+
+            <button class="form__btn botao">Realizar Inscrição</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="./dir/js/app.js"></script>
   </body>
 </html>

@@ -1,0 +1,28 @@
+.nav__menu {
+  width: 100%;
+  .menu {
+    &__list {
+      text-align: center;
+      display: block;
+    }
+    &__item {
+      background-color: rgba(0, 0, 0, 0.1);
+      border-radius: var(--radius);
+      display: inline-block;
+      padding: var(--pd--16);
+      margin-bottom: var(--pd--32);
+
+      transition: background 250ms var(--anima--default);
+      &:hover,
+      &:focus {
+        background-color: var(--green-300);
+      }
+    }
+    &__link {
+      display: block;
+      color: var(--white);
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+}

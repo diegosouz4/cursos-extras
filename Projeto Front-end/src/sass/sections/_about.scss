@@ -1,0 +1,21 @@
+.sobre {
+  padding-top: var(--pd--20);
+  padding-bottom: var(--pd--20);
+  text-align: center;
+  &__titulo {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: var(--pd--16);
+  }
+  &__subtitulo {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: var(--pd--16);
+  }
+  &__texto {
+    font-size: 1rem;
+    line-height: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}

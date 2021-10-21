@@ -1,0 +1,26 @@
+.chamada {
+  text-align: center;
+  text-transform: uppercase;
+  &__titulo {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--white);
+    text-shadow: var(--t-shadow);
+    margin-bottom: var(--pd--10);
+    @include for-desktop-only {
+      font-size: 4rem;
+    }
+  }
+  &__subtitulo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--green-200);
+    text-shadow: var(--t-shadow);
+    @include for-desktop-only {
+      font-size: 3rem;
+    }
+  }
+  &__link {
+    display: inline-block;
+  }
+}

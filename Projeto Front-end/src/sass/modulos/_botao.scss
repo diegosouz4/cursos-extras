@@ -1,0 +1,12 @@
+.botao {
+  background-color: var(--green-300);
+  border-radius: var(--radius);
+  box-shadow: var(--b-shadow);
+  color: var(--white);
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: var(--pd--20) var(--pd--32);
+  margin-top: var(--pd--32);
+  margin-bottom: var(--pd--32);
+  text-transform: uppercase;
+}

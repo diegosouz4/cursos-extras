@@ -1,0 +1,10 @@
+.contato {
+  padding-top: var(--pd--32);
+  padding-bottom: var(--pd--32);
+  &__titulo {
+    color: var(--orange-300);
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

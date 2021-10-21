@@ -1,4 +1,22 @@
+html {
+  font-size: 1rem;
+}
+
 ul,
 li {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.smoothScroll {
+  scroll-behavior: smooth;
 }

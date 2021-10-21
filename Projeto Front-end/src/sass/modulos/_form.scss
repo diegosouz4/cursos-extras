@@ -1,0 +1,33 @@
+.form {
+  margin-top: var(--pd--16);
+  &__field {
+    margin-bottom: var(--pd--10);
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__label,
+  &__input {
+    display: block;
+    width: 100%;
+  }
+  &__label {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: var(--pd--10);
+  }
+  &__input {
+    border: 0;
+    border: 1px solid var(--green-300);
+    border-radius: 0.2rem;
+    padding: var(--pd--10);
+    box-shadow: 1px 1px 10px var(--green-300);
+  }
+  &__btn {
+    border: 0;
+    display: block;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: var(--pd--16);
+  }
+}

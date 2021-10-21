@@ -1,2 +1,16 @@
+@import "modulos/reset";
 @import "modulos/variaveis";
 @import "modulos/base";
+
+// modulos
+@import "modulos/menu";
+@import "modulos/botao";
+@import "modulos/form";
+
+// sections
+@import "sections/header";
+@import "sections/chamada";
+@import "sections/main";
+@import "sections/about";
+@import "sections/palestra";
+@import "sections/contato";
